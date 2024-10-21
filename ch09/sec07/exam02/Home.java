@@ -1,0 +1,46 @@
+package ch09.sec07.exam02;
+
+public class Home {
+    private RemoteControl rc = new RemoteControl() {
+        @Override
+        public void turnON() {
+            System.out.println("TV를 켭니다.");
+
+        }
+
+        @Override
+        public void turnOff() {
+            System.out.println("TV를 끕니다.");
+
+        }
+    };
+
+    //메소드 (필드사용)
+
+    public void use1(){
+        rc.turnON();
+        rc.turnOff();
+    }
+    //메소드 (로컬 변수 이용)
+    public void use2(){
+        RemoteControl rc= new RemoteControl() {
+            @Override
+            public void turnON() {
+                System.out.println("에어컨을 켭니다.");
+            }
+
+            @Override
+            public void turnOff() {
+                System.out.println("에어컨을 끕니다.");
+            }
+        };
+        rc.turnON();
+        rc.turnOff();
+    }
+
+    //메소드 매개변수 이용
+    public void  use3(RemoteControl rc){
+        rc.turnON();
+        rc.turnOff();
+    }
+}
