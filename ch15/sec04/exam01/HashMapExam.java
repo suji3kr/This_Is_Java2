@@ -35,9 +35,9 @@ public class HashMapExam {
         //set 컬렉션을 얻고, 반복해서 키와값을 얻기
 
         Set<Map.Entry<String,Integer>> entrySet = map.entrySet();
-        Iterator<Map.Entry<String,Integer>>entryIterator=entrySet.iterator();
+        Iterator<Entry<String,Integer>>entryIterator=entrySet.iterator();
         while (entryIterator.hasNext()){
-            Map.Entry<String, Integer> entry = entryIterator.next();
+            Entry<String, Integer> entry = entryIterator.next();
             String k= entry.getKey();
             Integer v =entry.getValue();
             System.out.println(k + ":"+ v);

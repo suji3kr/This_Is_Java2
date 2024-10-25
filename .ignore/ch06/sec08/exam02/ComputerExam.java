@@ -3,7 +3,7 @@ package ch06.sec08.exam02;
 public class ComputerExam {
     public static void main(String[] args) {
 
-        Computer myCom= new Computer();
+        ch06.sec08.exam02.Computer myCom= new ch06.sec08.exam02.Computer();
 
         int result1 = myCom.sum (1,2,3);
         System.out.println("result1: "+ result1);

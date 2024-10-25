@@ -1,0 +1,5 @@
+driver=oracle.jdbc.OracleDriver
+url=Jdbc:orcle:thin:@localhost:1521:
+username=soft
+password=tier
+admin=\ud64d\uae38\ub3d9\u000d
