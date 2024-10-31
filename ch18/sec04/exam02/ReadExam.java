@@ -38,6 +38,5 @@ public class ReadExam {
         } catch (IOException e) {
             e.printStackTrace(); // I/O 오류 발생 시 예외 처리
         }
-
     }
 }
